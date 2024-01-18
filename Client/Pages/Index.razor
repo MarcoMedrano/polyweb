@@ -1,0 +1,81 @@
+@page "/"
+@using Radzen.Blazor;
+
+<PageTitle>Index</PageTitle>
+<RadzenRow Gap="5" RowGap="5">
+    <RadzenColumn Size="12">
+        <RadzenText Text="The only polyglot translator" TextStyle="TextStyle.DisplayH2" TagName="TagName.Auto"></RadzenText>
+        <RadzenText Text="Learnning and working with new languages it was never so easy, thanks to:" TextStyle="TextStyle.Body1" TagName="TagName.Auto" class="mt-4" Style="font-size: 20px; line-height: 24px"></RadzenText>
+        <RadzenText Text="Poly" TextStyle="TextStyle.H4" TagName="TagName.H2" class="mt-4"></RadzenText>
+        <RadzenImage Path="images\poly.png" Style="width: 256px; display: flex; vertical-align: baseline; margin: 0 auto"></RadzenImage>
+        <RadzenTimeline Orientation="Orientation.Vertical" LinePosition="Radzen.LinePosition.Alternate"
+            style="--rz-timeline-line-width: 3px;
+                   --rz-timeline-line-color: var(--rz-info);
+                   --rz-timeline-axis-size: 72px;
+                   max-width: 600px;
+                   margin: 0 auto;">
+            <Items>
+                <RadzenTimelineItem PointVariant="Variant.Outlined" PointSize="PointSize.Large" PointStyle="PointStyle.Info" PointShadow="0">
+                    <PointContent><RadzenIcon Icon="translate" /></PointContent>
+                    <ChildContent>
+                        <RadzenText TextStyle="TextStyle.Subtitle1" Class="rz-m-0 rz-color-info">Multilanguage</RadzenText>
+                        <RadzenText TextStyle="TextStyle.Body1" Class="rz-m-0">
+                            Tired of switching tabs or searching for multiple languages?
+                            <br />
+                            Poly is a polyglot, so it will translate to all your favorite languages at the same time.
+                        </RadzenText>
+                    </ChildContent>
+                </RadzenTimelineItem>
+                <RadzenTimelineItem PointVariant="Variant.Outlined" PointSize="PointSize.Large" PointStyle="PointStyle.Info" PointShadow="0">
+                    <PointContent><RadzenIcon Icon="push_pin" /></PointContent>
+                    <ChildContent>
+                        <RadzenText TextStyle="TextStyle.Subtitle1" Class="rz-m-0 rz-color-info">Poly is always there for you!</RadzenText>
+                        <RadzenText TextStyle="TextStyle.Body1" Class="rz-m-0">
+                            Poly is always open, always on top, ready to help!
+                            <br />
+                            Do not waste your time again going to the browser to get a translation.
+                        </RadzenText>
+                    </ChildContent>
+                </RadzenTimelineItem>
+                <RadzenTimelineItem PointVariant="Variant.Outlined" PointSize="PointSize.Large" PointStyle="PointStyle.Info" PointShadow="0">
+                    <PointContent><RadzenIcon Icon="visibility" /></PointContent>
+                    <ChildContent>
+                        <RadzenText TextStyle="TextStyle.Subtitle1" Class="rz-m-0 rz-color-info">Poly is always viewing</RadzenText>
+                        <RadzenText TextStyle="TextStyle.Body1" Class="rz-m-0">
+                            Wasted learnning odd keyboard combinations or having to copy the text to translate?
+                            <br />
+                            With Poly you just need to select the text or double click a word.
+                        </RadzenText>
+                    </ChildContent>
+                </RadzenTimelineItem>
+                <RadzenTimelineItem PointVariant="Variant.Outlined" PointSize="PointSize.Large" PointStyle="PointStyle.Info" PointShadow="0">
+                    <PointContent><RadzenIcon Icon="image_search" /></PointContent>
+                    <ChildContent>
+                        <RadzenText TextStyle="TextStyle.Subtitle1" Class="rz-m-0 rz-color-info">Learn by association</RadzenText>
+                        <RadzenText TextStyle="TextStyle.Body1" Class="rz-m-0">
+                            How do kids learn?
+                            <br />
+                            They associate pictures with words and sounds.
+                            That is why Poly helps you picture it by searching images and playing back pronunciations.
+                        </RadzenText>
+                    </ChildContent>
+                </RadzenTimelineItem>
+            </Items>
+        </RadzenTimeline>
+        <RadzenCard  Class="rz-my-12 rz-mx-auto" Style="max-width: 420px">
+        <RadzenStack Orientation="Orientation.Vertical" JustifyContent="JustifyContent.Start" Gap="1rem" Class="rz-p-4">
+           
+                <RadzenText TextStyle="TextStyle.DisplayH6" TagName="TagName.H3" Style="text-align: center">
+                    What are you waiting for?
+                </RadzenText>
+                <RadzenButton>
+                    <RadzenIcon Icon="get_app" Style="margin-top: 2px; width: 48px; height: 48px; font-size: 48px; color: var(--rz-text-title-color);"></RadzenIcon>
+                </RadzenButton>
+                <RadzenText TextStyle="Radzen.Blazor.TextStyle.Caption" Style="font-style: italic; text-align: center">
+                    At this time only available for windows.
+                </RadzenText>
+        </RadzenStack>
+    </RadzenCard>
+    </RadzenColumn>
+</RadzenRow>
+
