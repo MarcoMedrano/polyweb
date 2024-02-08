@@ -44,6 +44,8 @@
                         <RadzenText TextStyle="TextStyle.Body1" Class="rz-m-0">
                             Wasted learnning odd keyboard combinations or having to copy the text to translate?
                             <br />
+                            <strong>No more</strong> ctrl + shif + alt + #@@$%!$&
+                            <br />
                             With Poly you just need to select the text or double click a word.
                         </RadzenText>
                     </ChildContent>
@@ -68,9 +70,10 @@
                 <RadzenText TextStyle="TextStyle.DisplayH6" TagName="TagName.H3" Style="text-align: center">
                     What are you waiting for?
                 </RadzenText>
-                <RadzenButton>
-                    <RadzenIcon Icon="get_app" Style="margin-top: 2px; width: 48px; height: 48px; font-size: 48px; color: var(--rz-text-title-color);"></RadzenIcon>
-                </RadzenButton>
+                <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="Radzen.JustifyContent.Center">
+                    <RadzenButton Click="DownloadWindowsx86" Icon="get_app" Text="x86" Size="Radzen.ButtonSize.Large" />
+                    <RadzenButton Click="DownloadWindowsx64" Icon="get_app" Text="x64" Size="Radzen.ButtonSize.Large" />
+                </RadzenStack>
                 <RadzenText TextStyle="Radzen.Blazor.TextStyle.Caption" Style="font-style: italic; text-align: center">
                     At this time only available for windows.
                 </RadzenText>
