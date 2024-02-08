@@ -3,9 +3,7 @@ using Microsoft.AspNetCore.Hosting.Server.Features;
 using Radzen;
 
 var builder = WebApplication.CreateBuilder(args);
-
 // Add services to the container.
-
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 builder.Services.AddScoped<DialogService>();
@@ -18,11 +16,13 @@ builder.Services.AddSingleton(sp =>
     var server = sp.GetRequiredService<IServer>();
     var addressFeature = server.Features.Get<IServerAddressesFeature>();
     string baseAddress = addressFeature.Addresses.First();
-    return new HttpClient { BaseAddress = new Uri(baseAddress) };
+    return new HttpClient
+    {
+        BaseAddress = new Uri(baseAddress)
+    };
 });
-
+builder.Services.AddLocalization();
 var app = builder.Build();
-
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -36,15 +36,11 @@ else
 }
 
 app.UseHttpsRedirection();
-
 app.UseBlazorFrameworkFiles();
 app.UseStaticFiles();
-
+app.UseRequestLocalization(options => options.AddSupportedCultures("en", "es").AddSupportedUICultures("en", "es").SetDefaultCulture("en"));
 app.UseRouting();
-
-
 app.MapRazorPages();
 app.MapControllers();
 app.MapFallbackToPage("/_Host");
-
 app.Run();
