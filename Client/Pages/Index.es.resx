@@ -1,0 +1,110 @@
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="OnlyForWindows" xml:space="preserve">
+    <value>En este momento solo disponible para Windows.</value>
+  </data>
+  <data name="DownloadTitle" xml:space="preserve">
+    <value>¿Que estas esperando?</value>
+  </data>
+  <data name="LearnDescription" xml:space="preserve">
+    <value>
+    ¿Cómo aprenden los niños?
+    
+    Asocian imágenes con palabras y sonidos. 
+    Es por eso que Poly te ayuda a imaginarlo, buscando imágenes y reproduciendo pronunciaciones.
+    </value>
+  </data>
+  <data name="Learn" xml:space="preserve">
+    <value>Aprender por asociación</value>
+  </data>
+  <data name="AlwaysViewingDescription" xml:space="preserve">
+    <value>
+    ¿Cansado de aprender combinaciones de teclado raras?
+    
+    No más ctrl + shif + alt + #@@$%!$ 😵
+    
+    Con Poly solo necesitas seleccionar el texto o hacer doble click en una palabra.
+    </value>
+  </data>
+  <data name="AlwaysViewing" xml:space="preserve">
+    <value>Poly siempre está viendo</value>
+  </data>
+  <data name="AlwaysOnTopDescription2" xml:space="preserve">
+    <value>No pierdas tu tiempo nuevamente yendo al navegador para obtener una traducción.</value>
+  </data>
+  <data name="AlwaysOnTopDescription1" xml:space="preserve">
+    <value>¡Poly está siempre abierto, siempre disponible y listo para ayudar!</value>
+  </data>
+  <data name="AlwaysOnTop" xml:space="preserve">
+    <value>¡Poly siempre está ahí para ti!</value>
+  </data>
+  <data name="MultilanguagDescription" xml:space="preserve">
+    <value>¿Estás cansado de buscar varias veces? Poly es políglota, traducirá a todos tus idiomas favoritos al mismo tiempo.</value>
+  </data>
+  <data name="Multilanguage" xml:space="preserve">
+    <value>Multi lenguaje</value>
+  </data>
+  <data name="SubTitle" xml:space="preserve">
+    <value>Aprender y trabajar con nuevos idiomas nunca fue tan fácil, gracias a:</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>El único traductor políglota</value>
+  </data>
+</root>
