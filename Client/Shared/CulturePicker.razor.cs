@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using Radzen;
 using Radzen.Blazor;
+using Blazored.LocalStorage;
 
 namespace PolyWeb.Client.Shared
 {
@@ -31,6 +32,8 @@ namespace PolyWeb.Client.Shared
         [Inject]
         protected NotificationService NotificationService { get; set; }
 
+        [Inject] ILocalStorageService localStorage {get;set;}
+
         protected string culture;
 
         protected override void OnInitialized()
@@ -38,13 +41,10 @@ namespace PolyWeb.Client.Shared
             culture = CultureInfo.CurrentCulture.Name;
         }
 
-        protected void ChangeCulture()
+        protected async Task ChangeCulture()
         {
-            var redirect = new Uri(NavigationManager.Uri).GetComponents(UriComponents.PathAndQuery | UriComponents.Fragment, UriFormat.UriEscaped);
-
-            var query = $"?culture={Uri.EscapeDataString(culture)}&redirectUri={redirect}";
-
-            NavigationManager.NavigateTo("Culture/SetCulture" + query, forceLoad: true);
+            await localStorage.SetItemAsync("culture", culture);
+            NavigationManager.NavigateTo("/", forceLoad: true);
         }
     }
 }
