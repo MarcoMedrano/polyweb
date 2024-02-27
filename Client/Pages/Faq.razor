@@ -1,0 +1,29 @@
+@inject Microsoft.Extensions.Localization.IStringLocalizer<Faq> L
+@page "/faq"
+
+<PageTitle>Faq</PageTitle>
+<RadzenRow>
+    <RadzenColumn Size="12">
+        <RadzenText Text="@L["Title"]" TextStyle="TextStyle.H3" TagName="TagName.H1" />
+    </RadzenColumn>
+</RadzenRow>
+<br />
+<RadzenAccordion Multiple="true">
+    <Items>
+        <RadzenAccordionItem Text="@L["Playback"]" Icon="volume_up">
+            @L["PlaybackContent"]
+        </RadzenAccordionItem>
+        <RadzenAccordionItem Text="@L["Chrome"]" Icon="pest_control">
+            @L["ChromeContent"]
+            <br />
+            <RadzenTextBox ReadOnly="true" Value="chrome --force-renderer-accessibility=complete" Style="font-family: Arial; background-color: rgba(0, 0, 0, 0.53); width: 331px; height: 34px; border: 2px solid #45565e; display: flex; margin: auto" />            
+            @L["ChromeContent2"]
+            <RadzenImage Path="images\chrome-shortcut.png" Style="display: flex; margin: auto"></RadzenImage> 
+        </RadzenAccordionItem>
+        <RadzenAccordionItem Text="@L["Free"]" Icon="monetization_on">
+            @L["FreeContent"]
+            <a href="mailto:[poly-help@outlook.com]?subject=Pricing Suggestion?">email.</a>
+        </RadzenAccordionItem>
+    </Items>
+</RadzenAccordion>
+
