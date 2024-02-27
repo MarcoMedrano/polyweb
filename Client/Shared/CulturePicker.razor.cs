@@ -44,7 +44,7 @@ namespace PolyWeb.Client.Shared
         protected async Task ChangeCulture()
         {
             await localStorage.SetItemAsync("culture", culture);
-            NavigationManager.NavigateTo("/", forceLoad: true);
+            NavigationManager.NavigateTo(NavigationManager.Uri, forceLoad: true);
         }
     }
 }
