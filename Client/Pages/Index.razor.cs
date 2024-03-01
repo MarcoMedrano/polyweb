@@ -24,6 +24,14 @@ public partial class Index
     [Inject]
     protected NotificationService NotificationService { get; set; }
 
+    [Parameter] [SupplyParameterFromQuery]
+    public string Navigate { get; set; }
+
+    protected override void OnInitialized()
+    {
+        if(!string.IsNullOrEmpty(Navigate)) NavigationManager.NavigateTo($"/{Navigate}");
+    }
+
     private void DownloadWindowsx86()
     {
         NavigationManager.NavigateTo("https://polytranslator.s3.amazonaws.com/windows/x86/0.0.0.3/Poly.msi");
