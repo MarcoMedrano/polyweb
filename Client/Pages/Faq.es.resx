@@ -126,7 +126,7 @@
     <comment/>
   </data>
   <data name="ChromeContent2" xml:space="preserve">
-    <value>O puedes configurar tu atajo de chrome asi:</value>
+    <value>O puede configurar su acceso directo de Chrome. Haga clic derecho, luego Propiedades y establezca el Destino de esta manera:</value>
   </data>
   <data name="Free" xml:space="preserve">
     <value>Es Poly Gratuito?</value>
@@ -136,13 +136,25 @@
     <value>Poly es gratuito mientras está en Beta, después de lo cual planeamos tener anuncios para mantenerlo gratuito. Alternativamente, queremos una versión de paga que no tendrá anuncios. Todavía estamos pensándolo, si tienes alguna idea, haznolas saber por</value>
     <comment/>
   </data>
+  <data name="InstallAndUsage" xml:space="preserve">
+    <value>Instalación y uso</value>
+  </data>
   <data name="Playback" xml:space="preserve">
-    <value>Reproducción y pronunciación</value>
+    <value>Voz y pronunciación</value>
     <comment/>
   </data>
   <data name="PlaybackContent" xml:space="preserve">
-    <value>Poly utiliza tú sistema operativo para esto, asegúrese de configurar todos los paquetes de audio que necesitas. Más instrucciones pronto.</value>
+    <value>Poly utiliza tú sistema operativo para esto, asegúrese de configurar todos los paquetes de audio que necesitas.</value>
     <comment/>
+  </data>
+  <data name="PlaybackWindowsInstructions" xml:space="preserve">
+    <value>Vaya a configuración (Windows+i) &gt; Hora e idioma &gt; Voz y luego haga clic en "+ Agregar voces"</value>
+  </data>
+  <data name="SelectIsNotCatch" xml:space="preserve">
+    <value>El texto seleccionado no es capturado</value>
+  </data>
+  <data name="SelectIsNotCatchContent" xml:space="preserve">
+    <value>Hay algunas aplicaciones malvadas que no permiten que Poly capte la selección de texto. En esos casos, intenta habilitar la accesibilidad/lector de pantalla en la configuración de dicha aplicación. Si esa aplicación no tiene configuración de accesibilidad, siempre puedes copiar el texto (ctrl+c) y Poly lo capturará sin necesidad de pegarlo.</value>
   </data>
   <data name="Title" xml:space="preserve">
     <value>Preguntas frecuentes</value>

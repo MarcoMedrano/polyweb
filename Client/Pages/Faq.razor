@@ -7,23 +7,59 @@
         <RadzenText Text="@L["Title"]" TextStyle="TextStyle.H3" TagName="TagName.H1" />
     </RadzenColumn>
 </RadzenRow>
+<RadzenCard>
+    <RadzenText Text=@L["InstallAndUsage"] TextStyle="TextStyle.H5" TagName="TagName.H4" />
+    <iframe width="420" height="315" src="https://www.youtube.com/embed/Nhbwm4iPgWI?si=hxF5PHl7-E7LmruO" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen Style="display: flex; margin: auto" />
+</RadzenCard>
+
 <br />
+
 <RadzenAccordion Multiple="true">
     <Items>
+
         <RadzenAccordionItem Text="@L["Playback"]" Icon="volume_up">
             @L["PlaybackContent"]
+            <table>
+                <thead>
+                    <tr>
+                        <th>Windows</th>
+                        @* <th>Windows 10</th> *@
+                    </tr>
+                </thead>
+                <tr>
+                    <td>@L["PlaybackWindowsInstructions"]</td>
+                    @* <td></td> *@
+                </tr>
+                <tr>
+                    <td>
+                        <img src="images/win11-enable-speech.png" alt="Image 1">
+                    </td>
+                    @* <td>
+                        <img src="images/win11-enable-speech.png" alt="Image 2">
+                    </td> *@
+                </tr>
+            </table>
         </RadzenAccordionItem>
+
         <RadzenAccordionItem Text="@L["Chrome"]" Icon="pest_control">
             @L["ChromeContent"]
             <br />
-            <RadzenTextBox ReadOnly="true" Value="chrome --force-renderer-accessibility=complete" Style="font-family: Arial; background-color: rgba(0, 0, 0, 0.53); width: 331px; height: 34px; border: 2px solid #45565e; display: flex; margin: auto" />            
+            <RadzenTextBox ReadOnly="true" Value="chrome --force-renderer-accessibility=complete"
+                Style="font-family: Arial; background-color: rgba(0, 0, 0, 0.53); width: 331px; height: 34px; border: 2px solid #45565e; display: flex; margin: auto" />
             @L["ChromeContent2"]
-            <RadzenImage Path="images\chrome-shortcut.png" Style="display: flex; margin: auto"></RadzenImage> 
+            <RadzenImage Path="images\chrome-shortcut.png" Style="display: flex; margin: auto"></RadzenImage>
         </RadzenAccordionItem>
+
+        <RadzenAccordionItem Text="@L["SelectIsNotCatch"]" Icon="pest_control">
+            @L["SelectIsNotCatchContent"]
+        </RadzenAccordionItem>
+
         <RadzenAccordionItem Text="@L["Free"]" Icon="monetization_on">
             @L["FreeContent"]
             <a href="mailto:[poly-help@outlook.com]?subject=Pricing Suggestion?">email.</a>
         </RadzenAccordionItem>
+
     </Items>
 </RadzenAccordion>
-

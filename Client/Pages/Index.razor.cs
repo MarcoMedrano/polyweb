@@ -24,6 +24,15 @@ public partial class Index
     [Inject]
     protected NotificationService NotificationService { get; set; }
 
-    private void DownloadWindowsx86() => NavigationManager.NavigateTo("https://polytranslator.s3.amazonaws.com/windows/x86/0.0.0.2/Poly.msi", forceLoad: true);
-    private void DownloadWindowsx64() => NavigationManager.NavigateTo("https://polytranslator.s3.amazonaws.com/windows/x64/0.0.0.2/Poly.msi", forceLoad: true);
+    private void DownloadWindowsx86()
+    {
+        NavigationManager.NavigateTo("https://polytranslator.s3.amazonaws.com/windows/x86/0.0.0.3/Poly.msi");
+        NavigationManager.NavigateTo("/faq");
+    }
+
+    private void DownloadWindowsx64()
+    {
+        NavigationManager.NavigateTo("https://polytranslator.s3.amazonaws.com/windows/x64/0.0.0.3/Poly.msi");
+        NavigationManager.NavigateTo("/faq");
+    }
 }

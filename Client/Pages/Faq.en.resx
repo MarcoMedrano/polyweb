@@ -126,7 +126,7 @@
     <comment/>
   </data>
   <data name="ChromeContent2" xml:space="preserve">
-    <value>Or you can configure your chrome shortcut like this:</value>
+    <value>Or you can configure your chrome shortcut. Right click then Propertires and set the Target like this:</value>
   </data>
   <data name="Free" xml:space="preserve">
     <value>Is Poly Free?</value>
@@ -136,13 +136,25 @@
     <value>Poly is free while in beta, after which we plan to have ads to keep it for free. Alternatively, we want a pay version that will not have ads. We are still thinking about it, if you have any idea, make them know by</value>
     <comment/>
   </data>
+  <data name="InstallAndUsage" xml:space="preserve">
+    <value>Installation &amp; usage</value>
+  </data>
   <data name="Playback" xml:space="preserve">
-    <value>Playback and pronunciation</value>
+    <value>Speech and pronunciation</value>
     <comment/>
   </data>
   <data name="PlaybackContent" xml:space="preserve">
-    <value>Poly uses your Operative System for this, please make sure to configure all the audio packages you need. More instructions soon.</value>
+    <value>Poly uses your Operative System for this, please make sure to configure all the audio packages you need.</value>
     <comment/>
+  </data>
+  <data name="PlaybackWindowsInstructions" xml:space="preserve">
+    <value>Go to settings (Windows+i) &gt; Time &amp; Language &gt; Speech then click "+ Add voices"</value>
+  </data>
+  <data name="SelectIsNotCatch" xml:space="preserve">
+    <value>Text selection is not catch</value>
+  </data>
+  <data name="SelectIsNotCatchContent" xml:space="preserve">
+    <value>There are some evil applications that do not allow Poly to catch text selection. In those cases, try enabling accessibility/screen reader in the settings of that app. If that app doesn't have accessibility settings, you can always copy the text (ctrl+c) and Poly will capture it without needing to paste.</value>
   </data>
   <data name="Title" xml:space="preserve">
     <value>Frequently Asked Questions</value>
