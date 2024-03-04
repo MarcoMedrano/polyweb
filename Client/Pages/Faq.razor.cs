@@ -1,33 +1,39 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.JSInterop;
 using Microsoft.AspNetCore.Components;
-using Microsoft.AspNetCore.Components.Web;
 using Radzen;
-using Radzen.Blazor;
+using Microsoft.AspNetCore.Components;
 
-namespace PolyWeb.Client.Pages
+namespace PolyWeb.Client.Pages;
+
+public partial class Faq
 {
-    public partial class Faq
+    [Inject]
+    protected IJSRuntime JSRuntime { get; set; }
+
+    [Inject]
+    protected NavigationManager NavigationManager { get; set; }
+
+    [Inject]
+    protected DialogService DialogService { get; set; }
+
+    [Inject]
+    protected TooltipService TooltipService { get; set; }
+
+    [Inject]
+    protected ContextMenuService ContextMenuService { get; set; }
+
+    [Inject]
+    protected NotificationService NotificationService { get; set; }
+
+    bool isEdge;
+    string usageVideoLink;
+
+    protected override async Task OnInitializedAsync()
     {
-        [Inject]
-        protected IJSRuntime JSRuntime { get; set; }
+        var userAgent = await JSRuntime.InvokeAsync<string>("eval", " window.navigator.userAgent");
+        isEdge = userAgent.Contains("Edg");
 
-        [Inject]
-        protected NavigationManager NavigationManager { get; set; }
-
-        [Inject]
-        protected DialogService DialogService { get; set; }
-
-        [Inject]
-        protected TooltipService TooltipService { get; set; }
-
-        [Inject]
-        protected ContextMenuService ContextMenuService { get; set; }
-
-        [Inject]
-        protected NotificationService NotificationService { get; set; }
+        if(isEdge) usageVideoLink = "https://www.youtube.com/embed/f3SAODZjHpY?si=_YYZu8b6gWZ2MDFn";
+        else usageVideoLink = "https://www.youtube.com/embed/vFYG66x8zCY?si=FVXLTc8INnE1PIAQ";
     }
 }

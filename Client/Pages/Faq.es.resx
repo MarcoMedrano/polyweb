@@ -126,14 +126,14 @@
     <comment/>
   </data>
   <data name="ChromeContent2" xml:space="preserve">
-    <value>O puede configurar su acceso directo de Chrome. Haga clic derecho, luego Propiedades y establezca el Destino de esta manera:</value>
+    <value>O puedes configurar el acceso directo de Chrome. Haz clic derecho sobre el icono luego Propiedades y modifica el Destino de esta manera:</value>
   </data>
   <data name="Free" xml:space="preserve">
     <value>Es Poly Gratuito?</value>
     <comment/>
   </data>
   <data name="FreeContent" xml:space="preserve">
-    <value>Poly es gratuito mientras está en Beta, después de lo cual planeamos tener anuncios para mantenerlo gratuito. Alternativamente, queremos una versión de paga que no tendrá anuncios. Todavía estamos pensándolo, si tienes alguna idea, haznolas saber por</value>
+    <value>Poly es gratuito mientras está en Beta, después de lo cual planeamos tener anuncios para mantenerlo gratuito. Alternativamente, queremos una versión de paga que no tendrá anuncios. Todavía estamos pensándolo, si tienes alguna idea, haznola saber por</value>
     <comment/>
   </data>
   <data name="InstallAndUsage" xml:space="preserve">

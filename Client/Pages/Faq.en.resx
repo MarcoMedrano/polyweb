@@ -126,7 +126,7 @@
     <comment/>
   </data>
   <data name="ChromeContent2" xml:space="preserve">
-    <value>Or you can configure your chrome shortcut. Right click then Propertires and set the Target like this:</value>
+    <value>Or you can configure your chrome shortcut. Right click on the icon, then Propertires and set the Target like this:</value>
   </data>
   <data name="Free" xml:space="preserve">
     <value>Is Poly Free?</value>
