@@ -25,15 +25,18 @@ namespace PolyWeb.Client.Shared
         protected NotificationService NotificationService { get; set; }
 
         private bool sidebarExpanded = false;
+        string lemonTreeStyle = string.Empty;
 
         void SidebarToggleClick()
         {
             sidebarExpanded = !sidebarExpanded;
         }
 
-        protected override void OnInitialized()
+        protected override async Task OnInitializedAsync()
         {
-            sidebarExpanded = false;
+            var width = await JSRuntime.InvokeAsync<int>("eval", "window.innerWidth");
+            Console.WriteLine("WIDTH " +width);
+            if(width > 1000) lemonTreeStyle = "background-image: url('images/lemon-tree.png'); background-repeat: no-repeat; background-position: bottom left;";
         }
     }
 }
