@@ -99,6 +99,9 @@
     --rz-sidebar-color: #757575;
     --rz-panel-menu-background-color: #53ABF6;
     --rz-panel-menu-hover-background-color: #2095f3;
+    --rz-menu-item-color: #42a4f5;
+    --rz-menu-top-item-color: #42a4f5;
+    --rz-panel-menu-item-active-background-color: #42a4f5;
 }
 
 body {

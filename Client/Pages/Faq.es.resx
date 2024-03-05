@@ -137,7 +137,7 @@
     <comment/>
   </data>
   <data name="InstallAndUsage" xml:space="preserve">
-    <value>Instalación y uso</value>
+    <value>Gracias por descargar Poly, aqui como instalarlo y usarlo</value>
   </data>
   <data name="Playback" xml:space="preserve">
     <value>Voz y pronunciación</value>
@@ -148,7 +148,7 @@
     <comment/>
   </data>
   <data name="PlaybackWindowsInstructions" xml:space="preserve">
-    <value>Vaya a configuración (Windows+i) &gt; Hora e idioma &gt; Voz y luego haga clic en "+ Agregar voces"</value>
+    <value>Ve a configuración (Windows+i) &gt; Hora e idioma &gt; Voz y luego haga clic en "+ Agregar voces"</value>
   </data>
   <data name="SelectIsNotCatch" xml:space="preserve">
     <value>El texto seleccionado no es capturado</value>
