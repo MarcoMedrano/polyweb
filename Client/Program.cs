@@ -12,6 +12,7 @@ builder.Services.AddScoped<NotificationService>();
 builder.Services.AddScoped<TooltipService>();
 builder.Services.AddScoped<ContextMenuService>();
 builder.Services.AddTransient(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+builder.Services.AddTransient<DownloadInfoService>();
 builder.Services.AddLocalization();
 builder.Services.AddBlazoredLocalStorage();
 builder.Services.AddBlazoredLocalStorageAsSingleton();

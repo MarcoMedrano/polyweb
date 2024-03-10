@@ -24,23 +24,33 @@ public partial class Index
     [Inject]
     protected NotificationService NotificationService { get; set; }
 
-    [Parameter] [SupplyParameterFromQuery]
+    [Inject] DownloadInfoService DownloadInfoService { get; set; }
+
+    [Parameter]
+    [SupplyParameterFromQuery]
     public string Navigate { get; set; }
 
-    protected override void OnInitialized()
+    DownloadInfo x86Info;
+    DownloadInfo x64Info;
+
+    string currentVersion = string.Empty;
+
+    protected override async Task OnInitializedAsync()
     {
-        if(!string.IsNullOrEmpty(Navigate)) NavigationManager.NavigateTo($"/{Navigate}");
+        if (!string.IsNullOrEmpty(Navigate)) NavigationManager.NavigateTo($"/{Navigate}");
+
+        x86Info = await DownloadInfoService.GetX86DownloadInfoAsync();
+        x64Info = await DownloadInfoService.GetX64DownloadInfoAsync();
+
+        currentVersion = x86Info.Version;
     }
 
-    private void DownloadWindowsx86()
-    {
-        NavigationManager.NavigateTo("https://polytranslator.s3.amazonaws.com/windows/x86/0.0.0.5/Poly.msi");
-        NavigationManager.NavigateTo("/faq");
-    }
+    private void DownloadWindowsX86() => Download(x86Info.Url);
+    private void DownloadWindowsX64() => Download(x64Info.Url);
 
-    private void DownloadWindowsx64()
+    private void Download(string url)
     {
-        NavigationManager.NavigateTo("https://polytranslator.s3.amazonaws.com/windows/x64/0.0.0.5/Poly.msi");
+        NavigationManager.NavigateTo(url);
         NavigationManager.NavigateTo("/faq");
     }
 }

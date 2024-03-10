@@ -54,18 +54,22 @@
                 </RadzenTimelineItem>
             </Items>
         </RadzenTimeline>
-        <RadzenCard  Class="rz-my-12 rz-mx-auto" Style="max-width: 420px">
-        <RadzenStack Orientation="Orientation.Vertical" JustifyContent="JustifyContent.Start" Gap="1rem" Class="rz-p-4">
+        <RadzenCard  Class="rz-mx-auto" Style="max-width: 420px; padding-left: 10px; padding-right: 10px">
+        <RadzenStack Orientation="Orientation.Vertical" JustifyContent="JustifyContent.Start" Gap="1rem" Class="rz-p-1">
            
                 <RadzenText TextStyle="TextStyle.DisplayH6" TagName="TagName.H3" Style="text-align: center" Text="@L["DownloadTitle"]">
                     What are you waiting for?
                 </RadzenText>
                 <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="Radzen.JustifyContent.Center">
-                    <RadzenButton Click="DownloadWindowsx86" Icon="get_app" Text="x86" Size="Radzen.ButtonSize.Large" />
-                    <RadzenButton Click="DownloadWindowsx64" Icon="get_app" Text="x64" Size="Radzen.ButtonSize.Large" />
+                    <RadzenButton Click="DownloadWindowsX86" Icon="get_app" Text="x86" Size="Radzen.ButtonSize.Large" />
+                    <RadzenButton Click="DownloadWindowsX64" Icon="get_app" Text="x64" Size="Radzen.ButtonSize.Large" />
                 </RadzenStack>
                 <RadzenText TextStyle="Radzen.Blazor.TextStyle.Caption" Style="font-style: italic; text-align: center" Text="@L["OnlyForWindows"]">
-                    At this time only available for windows.
+                    At this time only available for Windows 10 on.
+                    @currentVersion
+                </RadzenText>
+                <RadzenText TextStyle="Radzen.Blazor.TextStyle.Caption" Style="font-style: italic; text-align: right" >
+                    @currentVersion
                 </RadzenText>
         </RadzenStack>
     </RadzenCard>
