@@ -1,0 +1,33 @@
+@using System.Globalization;
+@inject Microsoft.Extensions.Localization.IStringLocalizer<Terms> L
+
+@page "/terms"
+
+<PageTitle>@L["Title"]</PageTitle>
+<RadzenRow>
+    <RadzenColumn Size="12">
+        <RadzenText Text="@L["Title"]" TextStyle="TextStyle.H3" TagName="TagName.H1" />
+    </RadzenColumn>
+</RadzenRow>
+<RadzenCard Style="background-color: rgba(255, 255, 255, 0)">
+    <iframe src=@PdfUrl frameborder="0" class="pdf"></iframe>
+</RadzenCard>
+
+<style>
+.pdf {
+    width: -webkit-fill-available;
+    height: 720px;
+}
+</style>
+@code {
+
+    private const string PdfUrlBase = "https://polytranslator.s3.amazonaws.com/terms/Terms+of+Use+for+Poly+Translator-{0}.pdf";
+    private string PdfUrl;
+
+    protected override async Task OnInitializedAsync()
+    {
+        Console.WriteLine("Culture " + CultureInfo.DefaultThreadCurrentCulture);
+        string lng = CultureInfo.DefaultThreadCurrentCulture == null ? "en" : CultureInfo.DefaultThreadCurrentCulture.ToString();
+        PdfUrl = string.Format(PdfUrlBase, lng.ToUpper());
+    }
+}
