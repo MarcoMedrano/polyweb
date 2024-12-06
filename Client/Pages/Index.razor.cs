@@ -45,6 +45,7 @@ public partial class Index
         currentVersion = x86Info.Version;
     }
 
+    private void DownloadFromMSStore() => NavigationManager.NavigateTo("https://apps.microsoft.com/detail/9pcmpzmgr28s?ocid=pdpshare&SilentAuth=1&wa=wsignin1.0&hl=en-us&gl=US");
     private void DownloadWindowsX86() => Download(x86Info.Url);
     private void DownloadWindowsX64() => Download(x64Info.Url);
 

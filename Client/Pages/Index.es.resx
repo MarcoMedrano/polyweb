@@ -119,52 +119,66 @@
   </resheader>
   <data name="AlwaysOnTop" xml:space="preserve">
     <value>¡Poly siempre está ahí para ti!</value>
+    <comment/>
   </data>
   <data name="AlwaysOnTopDescription1" xml:space="preserve">
     <value>¡Poly está siempre abierto, siempre disponible y listo para ayudar!</value>
+    <comment/>
   </data>
   <data name="AlwaysOnTopDescription2" xml:space="preserve">
     <value>No pierdas tu tiempo nuevamente yendo al navegador para obtener una traducción.</value>
+    <comment/>
   </data>
   <data name="AlwaysViewing" xml:space="preserve">
     <value>Poly siempre está viendo</value>
+    <comment/>
   </data>
   <data name="AlwaysViewingDescription" xml:space="preserve">
-    <value>&#xD;
-    ¿Cansado de aprender combinaciones de teclado raras?&#xD;
-    &#xD;
-    No más ctrl + shif + alt + #@@$%!$ 😵&#xD;
-    &#xD;
-    Con Poly solo necesitas seleccionar el texto o hacer doble click en una palabra.&#xD;
-    </value>
+    <value>    ¿Cansado de aprender combinaciones de teclado raras?        No más ctrl + shif + alt + #@@$%!$ 😵        Con Poly solo necesitas seleccionar el texto o hacer doble click en una palabra.    </value>
+    <comment/>
   </data>
   <data name="DownloadTitle" xml:space="preserve">
     <value>¿Que estas esperando?</value>
+    <comment/>
   </data>
   <data name="Learn" xml:space="preserve">
     <value>Aprender por asociación</value>
+    <comment/>
   </data>
   <data name="LearnDescription" xml:space="preserve">
-    <value>&#xD;
-    ¿Cómo aprenden los niños?&#xD;
-    &#xD;
-    Asocian imágenes con palabras y sonidos. &#xD;
-    Es por eso que Poly te ayuda a imaginarlo, buscando imágenes y reproduciendo pronunciaciones.&#xD;
-    </value>
+    <value>    ¿Cómo aprenden los niños?        Asocian imágenes con palabras y sonidos.     Es por eso que Poly te ayuda a imaginarlo, buscando imágenes y reproduciendo pronunciaciones.    </value>
+    <comment/>
   </data>
   <data name="MultilanguagDescription" xml:space="preserve">
     <value>¿Estás cansado de buscar varias veces? Poly es políglota, traducirá a todos tus idiomas favoritos al mismo tiempo.</value>
+    <comment/>
   </data>
   <data name="Multilanguage" xml:space="preserve">
     <value>Multi lenguaje</value>
+    <comment/>
   </data>
   <data name="OnlyForWindows" xml:space="preserve">
     <value>En este momento solo disponible para Windows 10 en adelante.</value>
+    <comment/>
   </data>
   <data name="SubTitle" xml:space="preserve">
     <value>Aprender y trabajar con nuevos idiomas nunca fue tan fácil, gracias a:</value>
+    <comment/>
   </data>
   <data name="Title" xml:space="preserve">
     <value>El único traductor políglota</value>
+    <comment/>
+  </data>
+  <data name="Download" xml:space="preserve">
+    <value>Descarga Ya!</value>
+    <comment/>
+  </data>
+  <data name="Scan" xml:space="preserve">
+    <value>Scanea</value>
+    <comment/>
+  </data>
+  <data name="ScanDescription" xml:space="preserve">
+    <value>¿Asistes a Zoom, Teams, etc? ¿O necesita traducir el texto de un libro en PDF o una imagen? ¡¡Poly lo tiene por ti!! ¡¡Con Poly puedes escanear ese texto y obtener tus traducciones!!</value>
+    <comment/>
   </data>
 </root>

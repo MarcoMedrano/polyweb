@@ -44,6 +44,15 @@
                     </ChildContent>
                 </RadzenTimelineItem>
                 <RadzenTimelineItem PointVariant="Variant.Outlined" PointSize="PointSize.Large" PointStyle="PointStyle.Info" PointShadow="0">
+                    <PointContent><RadzenIcon Icon="flip" /></PointContent>
+                    <ChildContent>
+                        <RadzenText TextStyle="TextStyle.Subtitle1" Class="rz-m-0 rz-color-info" Text="@L["Scan"]">Learn by association</RadzenText>
+                        <RadzenText TextStyle="TextStyle.Body1" Class="rz-m-0">
+                            @((MarkupString)L["ScanDescription"].ToString())
+                        </RadzenText>
+                    </ChildContent>
+                </RadzenTimelineItem>
+                <RadzenTimelineItem PointVariant="Variant.Outlined" PointSize="PointSize.Large" PointStyle="PointStyle.Info" PointShadow="0">
                     <PointContent><RadzenIcon Icon="image_search" /></PointContent>
                     <ChildContent>
                         <RadzenText TextStyle="TextStyle.Subtitle1" Class="rz-m-0 rz-color-info" Text="@L["Learn"]">Learn by association</RadzenText>
@@ -60,10 +69,11 @@
                 <RadzenText TextStyle="TextStyle.DisplayH6" TagName="TagName.H3" Style="text-align: center" Text="@L["DownloadTitle"]">
                     What are you waiting for?
                 </RadzenText>
-                <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="Radzen.JustifyContent.Center">
+                <RadzenButton Click="DownloadFromMSStore" Icon="grid_view" Text=@L["Download"] Size="Radzen.ButtonSize.Large" />
+                @* <RadzenStack Orientation="Orientation.Horizontal" JustifyContent="Radzen.JustifyContent.Center">
                     <RadzenButton Click="DownloadWindowsX86" Icon="get_app" Text="x86" Size="Radzen.ButtonSize.Large" />
                     <RadzenButton Click="DownloadWindowsX64" Icon="get_app" Text="x64" Size="Radzen.ButtonSize.Large" />
-                </RadzenStack>
+                </RadzenStack> *@
                 <RadzenText TextStyle="Radzen.Blazor.TextStyle.Caption" Style="font-style: italic; text-align: center" Text="@L["OnlyForWindows"]">
                     At this time only available for Windows 10 on.
                     @currentVersion
