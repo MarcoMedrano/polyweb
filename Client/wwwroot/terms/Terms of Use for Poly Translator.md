@@ -1,6 +1,6 @@
 # Terms of Use for Poly Translator
 
-**Effective Date:** January 1, 2024
+**Effective Date:** October 26, 2026
 
 **PLEASE READ THIS AGREEMENT CAREFULLY. BY INSTALLING, ACCESSING, OR USING POLY TRANSLATOR, YOU AGREE TO BE BOUND BY THESE TERMS. IF YOU DO NOT AGREE, DO NOT USE THIS SOFTWARE.**
 
@@ -21,6 +21,9 @@ By using Poly Translator, you agree that the Software may collect, store, and us
 
 - Personal Information: Nickname, email, age, gender.
 - Usage Data: Times of app usage, types of texts translated, number of interactions, features used, and other behavioral patterns.
+- Diagnostic Data: Crash and error reports (error type, message, stack trace and the app component involved), app start and close events, app version, operating system version, display language, and a random installation identifier.
+
+**Anonymous Diagnostics (Windows):** The Windows version sends diagnostic data to Microsoft Azure Application Insights to detect and fix crashes. The installation identifier is randomly generated and not linked to your name, email or device name. Microsoft derives an approximate location (city and country) from your IP address and does not store the full IP address. Error messages may incidentally contain file paths from your computer. Diagnostic data is retained for up to 30 days. Diagnostics are on by default; you can turn them off at any time in Settings with the "Send anonymous diagnostics" switch, after which no further diagnostic data is sent.
 
 **Consent to Data Usage:** By accepting these Terms, you explicitly consent to the collection and use of your data. This data may be used for various purposes, including but not limited to improving the Software, analyzing usage trends, and creating personalized experiences. You also acknowledge and agree that the Author has the right to **sell, transfer, or otherwise disclose** this data to third parties without additional notice or compensation.
 
