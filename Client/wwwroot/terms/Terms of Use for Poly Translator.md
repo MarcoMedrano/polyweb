@@ -1,6 +1,6 @@
 # Terms of Use for Poly Translator
 
-**Effective Date:** October 26, 2026
+**Effective Date:** November 18, 2026
 
 **PLEASE READ THIS AGREEMENT CAREFULLY. BY INSTALLING, ACCESSING, OR USING POLY TRANSLATOR, YOU AGREE TO BE BOUND BY THESE TERMS. IF YOU DO NOT AGREE, DO NOT USE THIS SOFTWARE.**
 
@@ -23,7 +23,13 @@ By using Poly Translator, you agree that the Software may collect, store, and us
 - Usage Data: Times of app usage, types of texts translated, number of interactions, features used, and other behavioral patterns.
 - Diagnostic Data: Crash and error reports (error type, message, stack trace and the app component involved), app start and close events, app version, operating system version, display language, and a random installation identifier.
 
-**Anonymous Diagnostics (Windows):** The Windows version sends diagnostic data to Microsoft Azure Application Insights to detect and fix crashes. The installation identifier is randomly generated and not linked to your name, email or device name. Microsoft derives an approximate location (city and country) from your IP address and does not store the full IP address. Error messages may incidentally contain file paths from your computer. Diagnostic data is retained for up to 30 days. Diagnostics are on by default; you can turn them off at any time in Settings with the "Send anonymous diagnostics" switch, after which no further diagnostic data is sent.
+**Anonymous Diagnostics (Windows and Android):** The Windows and Android versions send diagnostic data to Microsoft Azure Application Insights to detect and fix crashes. The installation identifier is randomly generated and not linked to your name, email or device name. Microsoft derives an approximate location (city and country) from your IP address and does not store the full IP address. Error messages may incidentally contain file paths from your computer. Diagnostic data is retained for up to 30 days. Diagnostics are on by default; you can turn them off at any time in Settings with the "Send anonymous diagnostics" switch, after which no further diagnostic data is sent.
+
+**Text Sent to Online Services:** To translate, Poly Translator sends the text you enter to online translation services (Google, Microsoft Bing and Yandex). To read a translation aloud, it sends the text to Google's text-to-speech service. To show related images, it sends the words you search to image search services (Google, Brave, Openverse, Wikimedia Commons and Wikipedia). These services receive your IP address and handle the text under their own privacy policies; the Author does not operate them. On Windows, text captured from the screen is recognized on your device and then handled like typed text; the language data used for recognition is downloaded from GitHub.
+
+**Optional AI Assistant:** If you connect an AI provider (OpenRouter, Google Gemini, OpenAI, Anthropic or a custom OpenAI-compatible server you enter), the AI chat sends the original text, the translated text and your messages to that provider using your own account, under that provider's terms. Nothing is sent to an AI provider unless you connect one. Your API key is stored only on your device in the system's secure storage, is sent only to the provider you chose, and is removed when you sign out of that provider or the provider rejects it. On Android the key is also excluded from cloud backups and device transfers.
+
+**Deleting Your Data:** Settings, AI keys and other data stored by the Software stay on your device and are removed when you uninstall the Software or clear its storage. Diagnostic data is not linked to your name or email, so it cannot be matched to you and is deleted automatically after the retention period above; turning diagnostics off stops any further collection. To ask about or request deletion of other data held about you, contact <poly-help@outlook.com>.
 
 **Consent to Data Usage:** By accepting these Terms, you explicitly consent to the collection and use of your data. This data may be used for various purposes, including but not limited to improving the Software, analyzing usage trends, and creating personalized experiences. You also acknowledge and agree that the Author has the right to **sell, transfer, or otherwise disclose** this data to third parties without additional notice or compensation.
 
