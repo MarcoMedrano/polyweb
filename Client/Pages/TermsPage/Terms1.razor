@@ -1,34 +1,23 @@
-@using System.Globalization;
-@inject Microsoft.Extensions.Localization.IStringLocalizer<Terms> L
-
 @page "/terms1"
+@using Markdig
+@inject Microsoft.Extensions.Localization.IStringLocalizer<Terms> L
+@inject HttpClient Http
 
 <PageTitle>@L["Title"]</PageTitle>
-<RadzenRow>
-    <RadzenColumn Size="12">
-        <RadzenText Text="@L["Title"]" TextStyle="TextStyle.H3" TagName="TagName.H1" />
-    </RadzenColumn>
-</RadzenRow>
 <RadzenCard Style="background-color: rgba(255, 255, 255, 0)">
-    <iframe src=@PdfUrl frameborder="0" class="pdf"></iframe>
+    <article class="terms">@body</article>
 </RadzenCard>
 
 <style>
-.pdf {
-    width: -webkit-fill-available;
-    height: 720px;
-}
+.terms { max-width: 860px; margin: 0 auto; line-height: 1.6; }
 </style>
 @code {
-
-    private const string PdfUrlBase = "https://polytranslator.s3.amazonaws.com/terms/Terms+of+Use+for+Poly+Translator-1.0-{0}.pdf";
-    private string PdfUrl;
+    private const string MarkdownPath = "terms/Terms%20of%20Use%20for%20Poly%20Translator.md";
+    private MarkupString body;
 
     protected override async Task OnInitializedAsync()
     {
-        // Console.WriteLine("Culture " + CultureInfo.DefaultThreadCurrentCulture);
-        // string lng = CultureInfo.DefaultThreadCurrentCulture == null ? "en" : CultureInfo.DefaultThreadCurrentCulture.ToString();
-        // PdfUrl = string.Format(PdfUrlBase, lng.ToUpper());
-        PdfUrl = string.Format(PdfUrlBase, "EN");
+        var markdown = await Http.GetStringAsync(MarkdownPath);
+        body = new MarkupString(Markdown.ToHtml(markdown, new MarkdownPipelineBuilder().DisableHtml().Build()));
     }
 }
